@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Data</title>
+</head>
+<body>
+    <h1>All Sheets Data</h1>
+    {% for sheet_name, data in data_dict.items() %}
+    <h2>{{ sheet_name }}</h2>
+    {{ data | safe }}
+    {% endfor %}
+</body>
+</html>
